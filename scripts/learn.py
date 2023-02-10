@@ -22,15 +22,16 @@ all_noise_levels = [np.array([0.99,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01]
                     np.array([0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99]),
                     np.array([0.05,0.15,0.25,0.35,0.45,0.55,0.65,0.75,0.85,0.95])]
 
-all_env_names = ['MiniGrid-Empty-Random-6x6-v0',
-                'MiniGrid-Dynamic-Obstacles-Random-6x6-v0',
-                'MiniGrid-LavaGapS5-v0',
-                'MiniGrid-Unlock-v0']
+# all_env_names = ['MiniGrid-Empty-Random-6x6-v0',
+#                 'MiniGrid-Dynamic-Obstacles-Random-6x6-v0',
+#                 'MiniGrid-LavaGapS5-v0',
+#                 'MiniGrid-Unlock-v0']
+all_env_names = ['MiniGrid-Dynamic-Obstacles-Random-6x6-v0']
 
 def main():
     for seed in range(2):
         torch.manual_seed(seed)
-        tf.set_random_seed(seed)
+        # tf.set_random_seed(seed)
         random.seed(seed)
         np.random.seed(seed)
         result_dict = dict()
@@ -45,7 +46,7 @@ def main():
                 # collect trajectories associated with this noise level
                 expert_states, expert_actions, expert_next_states, expert_eval = get_noisy_expert_trajs(
                     env=env, 
-                    expert_filepath='data/expertrank/%s/0.pth'%(env_name), 
+                    expert_filepath='data/ileed/%s/best_model.zip'%(env_name), 
                     noise_levels=all_noise_levels[i_noise], 
                     traj_size=ARGS.traj_size, 
                     device=DEVICE)
@@ -55,10 +56,10 @@ def main():
                 # RUN ALL 3 Algorithms
                 result[i_noise, 0] = run_bc(data_tup, env, ARGS.hidden_size, ARGS.embed_dim, DEVICE, seed)
                 result[i_noise, 1] = run_mle(data_tup, env, ARGS.hidden_size, ARGS.embed_dim, DEVICE, seed)
-                result[i_noise, 2] = run_mle_state(data_tup, env, ARGS.hidden_size, ARGS.embed_dim, DEVICE, seed)
+                # result[i_noise, 2] = run_mle_state(data_tup, env, ARGS.hidden_size, ARGS.embed_dim, DEVICE, seed)
 
                 torch.cuda.empty_cache()
-                tf.keras.backend.clear_session()
+                # tf.keras.backend.clear_session()
             # print(result)
             result_dict[env_name] = {'result': result, 'expert_evals': all_evals}
         print(result_dict)
