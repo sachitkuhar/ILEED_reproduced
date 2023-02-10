@@ -1,0 +1,135 @@
+Namespace(embed_dim=2, hidden_size=4, save_dir='ileed', seed=0, traj_size=1000)
+expert reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.93 std: 0.04
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.04 std: 0.11
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.06 std: 0.19
+expert noise 0.01 reward avg: 0.07 std: 0.23
+expert noise 0.01 reward avg: 0.00 std: 0.00
+learned reward avg: 0.42 std: 0.86
+learned reward avg: 0.60 std: 0.71
+expert reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.96 std: 0.02
+expert noise 0.99 reward avg: 0.95 std: 0.04
+expert noise 0.99 reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.96 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.04
+expert noise 0.01 reward avg: 0.10 std: 0.30
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+learned reward avg: 0.65 std: 0.70
+learned reward avg: 0.94 std: 0.04
+expert reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.96 std: 0.03
+expert noise 0.99 reward avg: 0.96 std: 0.02
+expert noise 0.99 reward avg: 0.95 std: 0.03
+expert noise 0.99 reward avg: 0.93 std: 0.04
+expert noise 0.99 reward avg: 0.95 std: 0.03
+expert noise 0.99 reward avg: 0.93 std: 0.06
+expert noise 0.99 reward avg: 0.92 std: 0.06
+expert noise 0.99 reward avg: 0.95 std: 0.04
+expert noise 0.99 reward avg: 0.93 std: 0.05
+learned reward avg: 0.65 std: 0.70
+learned reward avg: 0.94 std: 0.04
+expert reward avg: 0.94 std: 0.05
+expert noise 0.05 reward avg: 0.19 std: 0.25
+expert noise 0.15 reward avg: 0.35 std: 0.33
+expert noise 0.25 reward avg: 0.67 std: 0.25
+expert noise 0.35 reward avg: 0.80 std: 0.14
+expert noise 0.45 reward avg: 0.74 std: 0.19
+expert noise 0.55 reward avg: 0.81 std: 0.13
+expert noise 0.65 reward avg: 0.92 std: 0.04
+expert noise 0.75 reward avg: 0.88 std: 0.09
+expert noise 0.85 reward avg: 0.91 std: 0.06
+expert noise 0.95 reward avg: 0.93 std: 0.04
+learned reward avg: 0.84 std: 0.44
+learned reward avg: 0.94 std: 0.04
+{'MiniGrid-Dynamic-Obstacles-Random-6x6-v0': {'result': array([[[0.41565625, 0.86002203],
+        [0.6002375 , 0.70569709],
+        [0.        , 0.        ]],
+
+       [[0.64940625, 0.69927446],
+        [0.938725  , 0.04366312],
+        [0.        , 0.        ]],
+
+       [[0.65485   , 0.69870287],
+        [0.94360625, 0.03809244],
+        [0.        , 0.        ]],
+
+       [[0.84324375, 0.4375593 ],
+        [0.94255   , 0.04067455],
+        [0.        , 0.        ]]]), 'expert_evals': [{'expert': [0.9397500000000001, 0.038634100869568574], 'noise_0': [0.9318750000000001, 0.041968179910498844], 'noise_1': [0.0, 0.0], 'noise_2': [0.0, 0.0], 'noise_3': [0.0375, 0.11250000000000002], 'noise_4': [0.0, 0.0], 'noise_5': [0.0, 0.0], 'noise_6': [0.0, 0.0], 'noise_7': [0.061875, 0.185625], 'noise_8': [0.075, 0.22500000000000003], 'noise_9': [0.0, 0.0]}, {'expert': [0.9447500000000001, 0.04077108350289455], 'noise_0': [0.96, 0.018371173070873836], 'noise_1': [0.946875, 0.03752603263069518], 'noise_2': [0.93625, 0.04417649261768073], 'noise_3': [0.96125, 0.028885550020728377], 'noise_4': [0.9375, 0.03801726581436387], 'noise_5': [0.099375, 0.29812500000000003], 'noise_6': [0.0, 0.0], 'noise_7': [0.0, 0.0], 'noise_8': [0.0, 0.0], 'noise_9': [0.0, 0.0]}, {'expert': [0.9431875, 0.039529409542137114], 'noise_0': [0.9375, 0.04489571249016994], 'noise_1': [0.95875, 0.028531780526283315], 'noise_2': [0.9575000000000001, 0.020879116360612588], 'noise_3': [0.95375, 0.032379584617471535], 'noise_4': [0.9337499999999999, 0.03864906208435076], 'noise_5': [0.9450000000000001, 0.03122498999199199], 'noise_6': [0.925, 0.0571456472533123], 'noise_7': [0.921875, 0.06015929375416571], 'noise_8': [0.945625, 0.03740091075094294], 'noise_9': [0.925, 0.047844148022511586]}, {'expert': [0.9393750000000003, 0.04523808544799393], 'noise_0': [0.190625, 0.2540799886354689], 'noise_1': [0.350625, 0.3305351957432068], 'noise_2': [0.6737499999999998, 0.2546719703854352], 'noise_3': [0.795, 0.14347255835176287], 'noise_4': [0.744375, 0.19228173502701706], 'noise_5': [0.8099999999999999, 0.13460590625971805], 'noise_6': [0.9225, 0.039646878817884264], 'noise_7': [0.880625, 0.09024489251475676], 'noise_8': [0.9125, 0.06489173676208707], 'noise_9': [0.931875, 0.03937500000000001]}]}}
+expert reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.94 std: 0.03
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.05 std: 0.16
+expert noise 0.01 reward avg: 0.06 std: 0.19
+expert noise 0.01 reward avg: 0.04 std: 0.11
+expert noise 0.01 reward avg: 0.13 std: 0.26
+learned reward avg: 0.09 std: 0.96
+learned reward avg: 0.09 std: 0.97
+expert reward avg: 0.95 std: 0.04
+expert noise 0.99 reward avg: 0.93 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.03
+expert noise 0.99 reward avg: 0.95 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.03
+expert noise 0.99 reward avg: 0.96 std: 0.03
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.07 std: 0.20
+expert noise 0.01 reward avg: 0.00 std: 0.00
+expert noise 0.01 reward avg: 0.04 std: 0.13
+learned reward avg: 0.74 std: 0.60
+learned reward avg: 0.94 std: 0.04
+expert reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.92 std: 0.05
+expert noise 0.99 reward avg: 0.93 std: 0.03
+expert noise 0.99 reward avg: 0.95 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.02
+expert noise 0.99 reward avg: 0.96 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.04
+expert noise 0.99 reward avg: 0.94 std: 0.03
+expert noise 0.99 reward avg: 0.96 std: 0.03
+expert noise 0.99 reward avg: 0.94 std: 0.05
+expert noise 0.99 reward avg: 0.95 std: 0.04
+learned reward avg: 0.65 std: 0.71
+learned reward avg: 0.94 std: 0.13
+expert reward avg: 0.95 std: 0.03
+expert noise 0.05 reward avg: 0.14 std: 0.23
+expert noise 0.15 reward avg: 0.23 std: 0.34
+expert noise 0.25 reward avg: 0.40 std: 0.38
+expert noise 0.35 reward avg: 0.79 std: 0.17
+expert noise 0.45 reward avg: 0.77 std: 0.23
+expert noise 0.55 reward avg: 0.80 std: 0.13
+expert noise 0.65 reward avg: 0.91 std: 0.04
+expert noise 0.75 reward avg: 0.89 std: 0.09
+expert noise 0.85 reward avg: 0.95 std: 0.03
+expert noise 0.95 reward avg: 0.95 std: 0.04
+learned reward avg: 0.89 std: 0.31
+learned reward avg: 0.94 std: 0.04
+{'MiniGrid-Dynamic-Obstacles-Random-6x6-v0': {'result': array([[[0.0932    , 0.95837118],
+        [0.08831875, 0.96553191],
+        [0.        , 0.        ]],
+
+       [[0.73985   , 0.6031949 ],
+        [0.94486875, 0.04052823],
+        [0.        , 0.        ]],
+
+       [[0.64636875, 0.70599894],
+        [0.93683125, 0.12905933],
+        [0.        , 0.        ]],
+
+       [[0.89423125, 0.31181131],
+        [0.94324375, 0.04003731],
+        [0.        , 0.        ]]]), 'expert_evals': [{'expert': [0.9376249999999997, 0.041542335333969845], 'noise_0': [0.93875, 0.032811011871016725], 'noise_1': [0.0, 0.0], 'noise_2': [0.0, 0.0], 'noise_3': [0.0, 0.0], 'noise_4': [0.0, 0.0], 'noise_5': [0.0, 0.0], 'noise_6': [0.052500000000000005, 0.1575], 'noise_7': [0.063125, 0.189375], 'noise_8': [0.0375, 0.11250000000000002], 'noise_9': [0.13125, 0.2627379873562253]}, {'expert': [0.9497500000000001, 0.035957005576104366], 'noise_0': [0.9268750000000001, 0.028511236819892604], 'noise_1': [0.9412500000000001, 0.0292083036138698], 'noise_2': [0.9487500000000001, 0.02663409469082815], 'noise_3': [0.9412500000000001, 0.03344772040064914], 'noise_4': [0.96125, 0.02875], 'noise_5': [0.0, 0.0], 'noise_6': [0.0, 0.0], 'noise_7': [0.068125, 0.20437500000000003], 'noise_8': [0.0, 0.0], 'noise_9': [0.04375, 0.13125]}, {'expert': [0.943125, 0.0406346142469693], 'noise_0': [0.9249999999999998, 0.045242402677134655], 'noise_1': [0.9275, 0.02797878660699926], 'noise_2': [0.95375, 0.02866836235294928], 'noise_3': [0.9418749999999999, 0.024214213284763135], 'noise_4': [0.9574999999999999, 0.031099638261561816], 'noise_5': [0.93625, 0.03737479096931513], 'noise_6': [0.9412499999999999, 0.03], 'noise_7': [0.9593750000000002, 0.029080975310329615], 'noise_8': [0.9431249999999999, 0.054303113400614514], 'noise_9': [0.9481249999999999, 0.03612586504154605]}, {'expert': [0.946875, 0.03319567931222375], 'noise_0': [0.1375, 0.22562413434736986], 'noise_1': [0.23374999999999999, 0.34325191186648907], 'noise_2': [0.40125, 0.38031442583735897], 'noise_3': [0.79125, 0.1725316999858287], 'noise_4': [0.7731250000000001, 0.23346991910094114], 'noise_5': [0.7975, 0.13173126052687723], 'noise_6': [0.9106249999999999, 0.036233832601589355], 'noise_7': [0.89375, 0.09138688363217118], 'noise_8': [0.946875, 0.029214989731300593], 'noise_9': [0.9481249999999999, 0.04108394607386199]}]}}
